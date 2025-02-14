@@ -148,6 +148,31 @@ h1 {
     right: 15px;
 }
 
+/* Letras de la canción */
+.letras-cancion {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.7);
+    z-index: -1;
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    pointer-events: none;
+}
+
+/* Reproductor de audio */
+audio {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 300px;
+    z-index: 1000;
+}
+
 /*Agregar clases dinamicos*/
 .abierto .sobre::before {
     transform: rotateX(180deg);
@@ -217,7 +242,9 @@ h1 {
         border-right: 150px solid transparent;
         border-left: 150px solid transparent;
     }
-
+    .letras-cancion {
+        font-size: 1.2em;
+    }
 }
 
 
